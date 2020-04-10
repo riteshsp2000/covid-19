@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+
+/* <================ General Styling ==============> */
+body {
+  margin: 0;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  background-color: #D0D0D0;
+  color: #282828;
+}
+
+a {
+  color: #282828;
+  text-decoration: none;
+}
+
+ul {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+/* <================ General Styling ==============> */
+
+
+
+/* <================ Navbar Styling ==============> */
+header {
+  width: 100%;
+}
+
+.navbar {
+  position: static;
+  margin: 1rem;
+  padding: 1rem;
+  width: 95%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(224, 224, 224, 0.5);
+  border-radius: 6px;
+}
+
+.navbar ul li a {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  float: right;
+}
+
+.navbar ul li {
+  float: left;
+  padding: 0 1.5rem;
+}
+
+.brand-name {
+  font-size: 2.5rem;
+}
+/* <================ Navbar Styling ==============> */
+
+
+
+/* <================ Login Styling ==============> */
+.login-container, .register-container {
+  width: 60%;
+  margin: 10rem auto;
+}
+
+.login-container form, .register-container form {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-container form .title, .register-container form .title {
+  position: absolute;
+  top: 0;
+  left: 41%;
+  font-size: 1.3rem;
+  color: rgba(208, 208, 208, 0.5);
+}
+
+.login-container form .email, .register-container form .email {
+  font-size: 1rem;
+  position: absolute;
+  top: 3rem;
+  left: 20%;
+  color: rgba(208, 208, 208, 0.5);
+}
+
+.login-container form .password, .register-container form .password {
+  font-size: 1rem;
+  position: absolute;
+  top: 6rem;
+  left: 20%;
+  color: rgba(208, 208, 208, 0.5);
+}
+
+.login-container form .email-input, .register-container form .email-input {
+  position: absolute;
+  top: 3rem;
+  left: 40%;
+  margin-top: 12px;
+  padding: 2px;
+  width: 15rem;
+  height: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(208, 208, 208, 0.5);
+}
+
+.login-container form .password-input, .register-container form .password-input {
+  position: absolute;
+  top: 6rem;
+  left: 40%;
+  margin-top: 12px;
+  padding: 2px;
+  width: 15rem;
+  height: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(208, 208, 208, 0.5);
+}
+
+.login-container form .login-button {
+  position: absolute;
+  top: 10rem;
+  left: 40%;
+  width: 6rem;
+  height: 1.8rem;
+  display: inline-block;
+  background-color: rgba(80, 80, 80, 0.5);
+  border-radius: 10px;
+  border: 4px double none;
+  color: #D0D0D0;
+  text-align: center;
+  font-size: 1rem;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+/* <================ Login Styling ==============> */
+
+
+
+/* <================ Register Styling ==============> */
+.register-container form .confirm-password {
+  font-size: 1rem;
+  position: absolute;
+  top: 9rem;
+  left: 20%;
+  color: rgba(208, 208, 208, 0.5);;
+}
+
+.register-container form .confirm-password-input {
+  position: absolute;
+  top: 9rem;
+  left: 40%;
+  margin-top: 12px;
+  width: 15rem;
+  height: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(208, 208, 208, 0.5);
+}
+
+.register-container form .register-button {
+  position: absolute;
+  top: 13rem;
+  left: 40%;
+  width: 6rem;
+  height: 1.8rem;
+  display: inline-block;
+  background-color: rgba(80, 80, 80, 0.5);
+  border-radius: 10px;
+  border: 4px double none;
+  color: #D0D0D0;
+  text-align: center;
+  font-size: 1rem;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+/* <================ Register Styling ==============> */
+
+
+
+
+/* <================ Footer Styling ==============> */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer h1 {
+  text-align: center;
+}
+/* <================ Footer Styling ==============> */

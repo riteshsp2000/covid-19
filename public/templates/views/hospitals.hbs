@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+
+<link rel="stylesheet" href="../../css/hospitals.css">
+<body>
+  {{> navbarLogin}}
+
+  <div class="wrapper-grid">
+    <div class="form-input-info box">
+      <h1>Enter the following details below. Also enter the quantity of the required products</h1>
+    </div>
+
+    <div class="container-info box">
+      <form name="hospitals-form">
+        <input type="text" placeholder="Name of the hospital" class="name" required>
+        <input type="text" placeholder="Location" class="location" required>
+        <input type="number" placeholder="Number of patients" class="patients" required>
+        <input type="number" placeholder="Number of corona patients" class="corona-patients" required>
+        <input type="number" placeholder="Number of critical patients" class="critical-patients" required>
+        <h1 class="requirement-product-1">Requirement Product 1 :</h1>
+        <input type="number" placeholder="Quantity" class="req-prod-1" required>
+        <h1 class="requirement-product-2">Requirement Product 2 :</h1>
+        <input type="number" placeholder="Quantity" class="req-prod-2" required>
+        <h1 class="requirement-product-3">Requirement Product 3 :</h1>
+        <input type="number" placeholder="Quantity" class="req-prod-3" required>
+      </form>
+    </div>
+
+    <div class="button-info box">
+      <button class="add-hospital" type="submit">Add Hospital</button>
+      <button class="update-hospital" type="submit">Update Hospital</button>
+    </div>
+
+    <div class="info-display box">
+
+    </div>
+
+    <div class="button-delete box">
+      <button class="delete-hospital" type="submit">Delete Hospital</button>
+    </div>
+  </div>
+
+  <script src="../../js/hospitals.js"></script>
+
+  {{> footer}}
+</body>
+</html>

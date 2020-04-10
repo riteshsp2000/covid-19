@@ -1,0 +1,145 @@
+.wrapper-grid {
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: minmax(5rem, auto);
+  grid-gap: 1.5rem;
+  grid-template-areas:
+  "formInputInfo formInputInfo formInputInfo formInputInfo formInputInfo"
+  "containerInfo containerInfo infoDisplay infoDisplay infoDisplay"
+  "containerInfo containerInfo infoDisplay infoDisplay infoDisplay"
+  "buttonInfo buttonInfo buttonDelete buttonDelete buttonDelete"
+}
+
+.form-input-info {
+  grid-area: formInputInfo;
+}
+
+.container-info {
+  grid-area: containerInfo;
+  height: 22rem;
+}
+
+.button-info {
+  grid-area: buttonInfo;
+}
+
+.info-display {
+  grid-area: infoDisplay;
+}
+
+.button-delete {
+  grid-area: buttonDelete;
+}
+
+.box {
+  border-radius: 10px;
+  background-color: rgba(224, 224, 224, 0.7);;
+}
+
+.wrapper-grid .button-info button {
+  margin: 1rem 1rem;
+  width: 43%;
+  padding: 0.7rem 0.7rem;
+  border-radius: 7px;
+  background-color: rgba(208, 208, 208, 1);
+}
+
+.wrapper-grid .button-delete button {
+  margin: 1rem 1rem;
+  width: 95%;
+  padding: 0.7rem 0.7rem;
+  border-radius: 7px;
+  background-color: rgba(208, 208, 208, 1);
+}
+
+.form-input-info h1 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+
+/* Form Styling */
+
+.container-info {
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.name, .location, .patients, .corona-patients, .critical-patients {
+  position: absolute;
+  display: inline-block;
+  width: 90%;
+  padding: 5px;
+  height: 1rem;
+  border-radius: 6px;
+  border: none;
+  left: 4%;
+}
+
+.name {
+  top: 5%;
+}
+
+.location {
+  top: 17%;
+}
+
+.patients {
+  top: 29%;
+}
+
+.corona-patients {
+  top: 41%;
+}
+
+.critical-patients {
+  top: 53%;
+}
+
+.requirement-product-1 {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  font-size: 1rem;
+}
+
+.requirement-product-2 {
+  position: absolute;
+  top: 77%;
+  left: 5%;
+  font-size: 1rem;
+}
+
+.requirement-product-3 {
+  top: 89%;
+  left: 5%;
+  position: absolute;
+  font-size: 1rem;
+}
+
+.req-prod-1, .req-prod-2, .req-prod-3 {
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  padding: 5px;
+  height: 1rem;
+  border-radius: 6px;
+  border: none;
+  left: 45%;
+  margin-top: 8px;
+}
+
+.req-prod-1 {
+  top: 65%;
+}
+
+.req-prod-2 {
+  top: 77%;
+}
+
+.req-prod-3 {
+  top: 89%;
+}

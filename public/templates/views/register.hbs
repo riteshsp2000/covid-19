@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<body>
+  {{> navbar}}
+
+  <div class="register-container">
+    <form name="register-form">
+      <h1 class="title">Register</h1>
+      <h1 class="email">Email</h1>
+      <input type="email" class="email-input" id="register-email">
+      <h1 class="password">Password</h1>
+      <input type="password" class="password-input" id="register-password">
+      <h1 class="confirm-password">Confirm Password</h1>
+      <input type="password" class="confirm-password-input" id="register-confirm-password">
+      <button class="register-button">Register</button>
+    </form>
+  </div>
+
+  <script src="../../js/register.js"></script>
+
+  {{> footer}}
+</body>
+</html>
