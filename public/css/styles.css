@@ -184,6 +184,10 @@ header {
   transition: all 0.5s;
   cursor: pointer;
 }
+
+.register-container form .register-button a, .login-container form .login-button a {
+  color: #D0D0D0;
+}
 /* <================ Register Styling ==============> */
 
 
@@ -200,3 +204,52 @@ header {
   text-align: center;
 }
 /* <================ Footer Styling ==============> */
+
+
+
+/* <============= Hospitals List ===============> */
+.hospital-list {
+  width: 93%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(224, 224, 224, 0.7);
+  margin: 1rem 2rem;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.hospital-list table {
+  width: 100%;
+  height: 55vh;
+}
+
+.hospital-list-head tr th {
+  border-bottom: 1px solid #484848;
+  padding-bottom: 10px;
+}
+
+.hospital-list-body tr td {
+  text-align: center;
+}
+
+
+/* ========================================================================= */
+
+.project-intro {
+  display: block;
+  margin: 2rem auto;
+  margin-top: 8rem;
+  width: 60%;
+}
+
+.project-intro h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(200,200,200, 0.6);
+}
+
+.project-intro p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: rgba(200,200,200, 0.6);
+}

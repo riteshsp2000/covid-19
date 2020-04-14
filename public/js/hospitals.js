@@ -25,8 +25,10 @@ addHospital.addEventListener('click', (e) => {
       },
       body: data
     })
-    .then((response) => response.text())
-    .then((text) => console.log(text))
+    .then((response) => {
+      response.json()
+      window.alert('Hospital has been added')
+    })
     .catch((error) => console.log(error));
 
     // window.alert('Hospital added');

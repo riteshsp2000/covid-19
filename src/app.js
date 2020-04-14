@@ -3,6 +3,7 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 const bodyParser = require('body-parser')
+const firebase = require('firebase');
 
 require('./db/firebase_config')
 
@@ -39,6 +40,7 @@ const loginRouter = require('./router/login')
 const registerRouter = require('./router/register')
 const aboutRouter = require('./router/about')
 const hospitalsRouter = require('./router/hospitals')
+const sellerRouter = require('./router/seller')
 
 
 // <========================== Setting up the middleware =========================>
@@ -47,7 +49,11 @@ app.use(loginRouter)
 app.use(registerRouter)
 app.use(aboutRouter)
 app.use(hospitalsRouter)
+app.use(sellerRouter)
 
+
+
+// =================================================================================
 
 app.listen(port, () => {
   console.log('Server started on port: ' + port)

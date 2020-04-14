@@ -9,7 +9,7 @@ const addHospital = (hospitals, uid) => {
 
   const data = JSON.stringify(hospitals)
 
-  var docRef = database.ref().child(hospitals.name)
+  var docRef = database.ref().child('Hospitals').child(hospitals.name)
 
   docRef.set(data).then(() => {
     console.log('Data has been added to the database')

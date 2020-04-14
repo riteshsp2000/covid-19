@@ -12,24 +12,26 @@ router.post('/login', async (req, res) => {
   const login = await req.body
 
   try {
-    await firebase.auth().signInWithEmailAndPassword(login.email, login.password)
-    .then(() => {
-      console.log('User has signed in successfully')
-    })
+    firebase.auth().signInWithEmailAndPassword(login.email, login.password)
+    // .then(() => {
+    //   console.log('User has signed in successfully')
+    // })
     .catch(function(error) {
       var errorCode = error.code;
       var errorMessage = error.message;
       throw new Error(errorCode + ': ' + errorMessage)
     })
 
-    firebase.auth().onAuthStateChanged(function(user) {
-      if (user) {    
-        return res.redirect('/hospitals')
+    // firebase.auth().onAuthStateChanged(function(user) {
+    //   if (user) {    
+    //     res.redirect('/hospitals')
         
-      } else {
-        throw new Error('Please use the correct email and password')
-      }
-    })
+    //   } else {
+    //     // throw new Error('Please use the correct email and password')
+    //     console.log('Please use the')
+    //   }
+    // })
+    
   } catch (e) {
     res.status(500).send()
     console.log(e)

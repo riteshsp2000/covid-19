@@ -36,7 +36,7 @@
 
 .box {
   border-radius: 10px;
-  background-color: rgba(224, 224, 224, 0.7);;
+  background-color: rgba(224, 224, 224, 0.7);
 }
 
 .wrapper-grid .button-info button {
@@ -142,4 +142,10 @@
 
 .req-prod-3 {
   top: 89%;
+}
+
+/* <============= Hospitals List ===============> */
+.hospital-list {
+  width: 97%;
+  height: 100vh;
 }

@@ -14,6 +14,7 @@ router.post('/register', async (req, res) => {
   firebase.auth().createUserWithEmailAndPassword(register.email, register.password)
   .then(() => {
     console.log('User has successfully created the account')
+    
   })
   .catch(function(error) {
     var errorCode = error.code;
@@ -21,14 +22,17 @@ router.post('/register', async (req, res) => {
     console.log(errorCode + ': ' + errorMessage)
   })
 
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {    
-      return res.redirect('/hospitals')
+  // firebase.auth().onAuthStateChanged(function(user) {
+  //   if (user) {    
+  //     res.redirect('/hospitals')
       
-    } else {
-      throw new Error('Please use the correct email and password')
-    }
-  })
+  //   } else {
+  //     throw new Error('Please use the correct email and password')
+  //   }
+  // })
+  // console.log('Completed')
+
+  res.redirect('/hospitals')
 })
   
 
